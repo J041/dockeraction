@@ -3,4 +3,7 @@
 echo "Hello $1"
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
-wget https://www.postb.in/1734507018287-9273768381681?hello=world
+echo "time=$time" >> /tmp/results
+output=cat /tmp/results | base64
+# wget https://www.postb.in/1734507018287-9273768381681?hello=world
+wget https://www.postb.in/1734507018287-9273768381681?$output
