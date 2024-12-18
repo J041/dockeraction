@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: J041/dockeraction@v1
+        uses: J041/dockeraction
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
